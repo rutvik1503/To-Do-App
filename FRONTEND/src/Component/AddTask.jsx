@@ -46,7 +46,7 @@ const AddTask = () => {
       showAlert("Please fill all details...!", "error");
     } else {
       try {
-        const response = await axios.post("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/addTask", {
+        const response = await axios.post("https://to-do-application-tglu.onrender.com/addTask", {
           title,
           description,
           dueDate,

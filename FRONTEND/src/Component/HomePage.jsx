@@ -42,7 +42,7 @@ const HomePage = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/allTasks");
+      const res = await axios.get("https://to-do-application-tglu.onrender.com/allTasks");
       const sortedTasks = (res.data.tasks || []).sort(
         (a, b) => new Date(a.dueDate) - new Date(b.dueDate)
       );
@@ -59,7 +59,7 @@ const HomePage = () => {
 
   const handleDeleteTask = (id) => {
     axios
-      .post("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/deleteTask", { id })
+      .post("https://to-do-application-tglu.onrender.com/deleteTask", { id })
       .then((res) => {
         showAlert(res.data.message, "success");
         fetchTasks();
@@ -236,7 +236,7 @@ const HomePage = () => {
             <button
               onClick={() => {
                 axios
-                  .post("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/updateTask", {
+                  .post("https://to-do-application-tglu.onrender.com/updateTask", {
                     id: editPopup.task._id,
                     title: editTitle,
                     description: editDescription,
@@ -350,7 +350,7 @@ const HomePage = () => {
                     className="appBtn doneBtn"
                     onClick={() => {
                       axios
-                        .post("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/markDone", {
+                        .post("https://to-do-application-tglu.onrender.com/markDone", {
                           id: task._id,
                         })
                         .then((res) => {

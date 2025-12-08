@@ -30,7 +30,7 @@ const CompletedTask = () => {
 
   const fetchCompletedTasks = async () => {
     try {
-      const res = await axios.get("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/allTasks");
+      const res = await axios.get("https://to-do-application-tglu.onrender.com/allTasks");
       const completed = (res.data.tasks || [])
         .filter((task) => task.isCompleted)
         .sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
@@ -42,7 +42,7 @@ const CompletedTask = () => {
 
   const handleDeleteTask = (id) => {
     axios
-      .post("mongodb+srv://TodoAppCluster:TodoApp1503@tododatabase.aqsvllu.mongodb.net/?appName=TodoDatabase/deleteTask", { id })
+      .post("https://to-do-application-tglu.onrender.com/deleteTask", { id })
       .then((res) => {
         showAlert(res.data.message, "success");
         setCompletedTasks((prev) => prev.filter((t) => t._id !== id));
