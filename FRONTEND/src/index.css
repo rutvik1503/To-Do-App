@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(https://res.cloudinary.com/dwx0y39ww/image/upload/v1764738859/MainBg_cjbkbl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.glassCard {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.navBtn {
+  position: relative;
+  overflow: hidden;
+  font-weight: 300;
+  outline: none;
+  padding: 8px 14px;
+  /* font-size: 17px; */
+  transition: transform 0.5s ease, font-weight 0.5s ease, color 0.5s ease;
+}
+
+.navBtn:focus {
+  outline: none;
+}
+
+.navBtn:hover,
+.navBtn:focus {
+  color: rgb(210, 210, 210);
+}
+
+.navBtn:active {
+  color: rgb(210, 210, 210);
+}
+
+/* Underline animation */
+.navBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.navBtn:hover::after,
+.navBtn:focus::after,
+.navBtn:active::after {
+  width: 100%;
+}
+
+.navBtn.activeNav::after {
+  width: 100%;
+}
+
+/* Hide scrollbar but keep scroll working */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.taskCard{
+  width: 100%;
+  height: 180px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* Base button style */
+.appBtn {
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 15px;
+  outline: none;
+  /* padding: 8px 14px; */
+  /* border-radius: 6px; */
+  border: none;
+  cursor: pointer;
+  background-color: transparent; /* no background */
+  transition: transform 0.5s ease, font-weight 0.3s ease, color 0.3s ease;
+}
+
+/* Edit Button */
+.editBtn {
+  color: #4caf50; /* green text */
+}
+
+.editBtn:hover,
+.editBtn:focus {
+  color: #45a049;
+}
+
+/* Delete Button */
+.deleteBtn {
+  color: #f44336; /* red text */
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+  color: #d32f2f;
+}
+
+/* Mark as Done Button */
+.doneBtn {
+  color: #2196f3; /* blue text */
+}
+
+.doneBtn:hover,
+.doneBtn:focus {
+  color: #1976d2;
+}
+
+/* Underline animation like navBtn */
+.appBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  /* border-radius: 5px; */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Line color matches button text */
+.editBtn::after {
+  background-color: #4caf50;
+}
+
+.deleteBtn::after {
+  background-color: #f44336;
+}
+
+.doneBtn::after {
+  background-color: #2196f3;
+}
+
+.appBtn:hover::after,
+.appBtn:focus::after {
+  width: 100%;
+}
+
+.taskHead {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.taskDescription, .taskDueDate, .taskStatus {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cardContainer{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskPriority{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Priority background and border colors */
+.priority-high {
+  /* background-color: rgba(244, 67, 54, 0.25); */
+  border: 1px solid rgba(244, 67, 54, 0.5);  /* red-ish border */
+}
+
+.priority-medium {
+  /* background-color: rgba(255, 193, 7, 0.25); */
+  border: 1px solid rgba(255, 193, 7, 0.5);  /* yellow-ish border */
+}
+
+.priority-low {
+  /* background-color: rgba(76, 175, 80, 0.25); */
+  border: 1px solid rgba(76, 175, 80, 0.5);  /* green-ish border */
+}
+/* Status styles */
+.status-pending {
+  color: #ff9800; /* orange text for pending */
+  font-weight: 500;
+}
+
+.status-done {
+  color: #4caf50; /* green text for done */
+  font-weight: 500;
+}
+
+.enhancedSelect {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(20, 20, 20, 0.35);      /* subtle dark glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  color: #e5e5e5;
+  font-size: 15px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: 0.25s ease-in-out;
+}
+
+/* Hover = soft light highlight */
+.enhancedSelect:hover {
+  background: rgba(25, 25, 25, 0.45);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Focus glow */
+.enhancedSelect:focus {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.12);
+}
+
+/* OPTIONS — only font colors, NO BG */
+.enhancedSelect option {
+  background: rgba(20, 20, 20, 0.85); /* very subtle dark, no harsh color */
+  backdrop-filter: blur(10px);
+  color: #ddd;
+}
+
+/* ONLY font color changes */
+.opt-high {
+  color: #ff6b6b;     /* soft red */
+}
+
+.opt-medium {
+  color: #f7d774;     /* mild yellow */
+}
+
+.opt-low {
+  color: #7ed957;     /* soft green */
+}
+
+/* Submit / Add Task Button */
+.submitBtn {
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4caf50; /* green text */
+  border: 1px solid #4caf50; /* green border */
+  border-radius: 10px;
+  background-color: transparent; /* no background */
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover / Focus / Active State */
+.submitBtn:hover,
+.submitBtn:focus,
+.submitBtn:active {
+  background-color: rgba(76, 175, 80, 0.2); /* light green glass */
+  color: #1b5e20; /* dark green font */
+  border-color: #1b5e20; /* dark green border */
+  box-shadow: 0 8px 15px rgba(76, 175, 80, 0.25); /* subtle shadow */
+}
+

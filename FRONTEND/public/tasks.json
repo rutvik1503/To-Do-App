@@ -1,0 +1,285 @@
+[{
+  "_id": {
+    "$oid": "693671b13daa77bbd033f87f"
+  },
+  "title": "Finish project report",
+  "description": "Complete the final draft of the quarterly project report.",
+  "dueDate": {
+    "$date": "2025-12-15T00:00:00.000Z"
+  },
+  "priority": "high",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:35:29.111Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:35:29.111Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693671c3f940e08d1c331579"
+  },
+  "title": "Team meeting",
+  "description": "Discuss the roadmap and assign tasks for next sprint.",
+  "dueDate": {
+    "$date": "2025-12-10T00:00:00.000Z"
+  },
+  "priority": "medium",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:35:47.548Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:35:47.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693671d744ac6271d4ba5513"
+  },
+  "title": "Client call",
+  "description": "Call with client to review project progress and gather feedback.",
+  "dueDate": {
+    "$date": "2025-12-12T00:00:00.000Z"
+  },
+  "priority": "high",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:36:07.960Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:36:07.960Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693671e8ee24f0f8e3d3ce7c"
+  },
+  "title": "Code review",
+  "description": "Review pull requests and merge approved code into main branch.",
+  "dueDate": {
+    "$date": "2025-12-11T00:00:00.000Z"
+  },
+  "priority": "medium",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:36:24.898Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:36:24.898Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693671fcf41eefd65320a323"
+  },
+  "title": "Write blog post",
+  "description": "Create a blog post about new product features and release notes.",
+  "dueDate": {
+    "$date": "2025-12-18T00:00:00.000Z"
+  },
+  "priority": "low",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:36:44.577Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:36:44.577Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936720e9b5ce6a3148d0d70"
+  },
+  "title": "Update website",
+  "description": "Add new landing page content and update existing product pages.",
+  "dueDate": {
+    "$date": "2025-12-14T00:00:00.000Z"
+  },
+  "priority": "medium",
+  "isCompleted": true,
+  "createdAt": {
+    "$date": "2025-12-08T06:37:02.061Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:59:36.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936721fbafbaca33728548f"
+  },
+  "title": "Organize files",
+  "description": "Sort and organize all project files in the shared drive.",
+  "dueDate": {
+    "$date": "2025-12-13T00:00:00.000Z"
+  },
+  "priority": "low",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:37:19.039Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:37:19.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936723706b85a6d1bb1859f"
+  },
+  "title": "Prepare presentation",
+  "description": "Create slides for upcoming stakeholder meeting.",
+  "dueDate": {
+    "$date": "2025-12-17T00:00:00.000Z"
+  },
+  "priority": "high",
+  "isCompleted": true,
+  "createdAt": {
+    "$date": "2025-12-08T06:37:43.082Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:59:28.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693672501618cb787bbe6a21"
+  },
+  "title": "Backup database",
+  "description": "Perform a full backup of the production database.",
+  "dueDate": {
+    "$date": "2025-12-16T00:00:00.000Z"
+  },
+  "priority": "high",
+  "isCompleted": true,
+  "createdAt": {
+    "$date": "2025-12-08T06:38:08.470Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:59:27.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693672613cf738a0f72633ba"
+  },
+  "title": "Email newsletter",
+  "description": "Draft and send the monthly newsletter to all subscribers.",
+  "dueDate": {
+    "$date": "2025-12-20T00:00:00.000Z"
+  },
+  "priority": "medium",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:38:25.477Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:38:25.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69367272e116f20e49873296"
+  },
+  "title": "Fix website bug",
+  "description": "Resolve the login issue reported by users.",
+  "dueDate": {
+    "$date": "2025-12-12T00:00:00.000Z"
+  },
+  "priority": "high",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:38:42.493Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:38:42.493Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936728227315d3744d126d9"
+  },
+  "title": "Order office supplies",
+  "description": "Restock printer paper, pens, and other essentials.",
+  "dueDate": {
+    "$date": "2025-12-19T00:00:00.000Z"
+  },
+  "priority": "low",
+  "isCompleted": true,
+  "createdAt": {
+    "$date": "2025-12-08T06:38:58.521Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:59:26.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69367291ff4e1992073fecb7"
+  },
+  "title": "Prepare invoices",
+  "description": "Generate and send invoices for completed projects.",
+  "dueDate": {
+    "$date": "2025-12-15T00:00:00.000Z"
+  },
+  "priority": "medium",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:39:13.541Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:39:13.541Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693672a2e1c136fc17f149e2"
+  },
+  "title": "Update social media",
+  "description": "Post weekly updates and engage with followers.",
+  "dueDate": {
+    "$date": "2025-12-11T00:00:00.000Z"
+  },
+  "priority": "low",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:39:30.342Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:39:30.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693672b302bf0b7392ceaece"
+  },
+  "title": "Plan team outing",
+  "description": "Organize a team-building event for the end of the year.",
+  "dueDate": {
+    "$date": "2025-12-22T00:00:00.000Z"
+  },
+  "priority": "medium",
+  "isCompleted": false,
+  "createdAt": {
+    "$date": "2025-12-08T06:39:47.463Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T06:39:47.463Z"
+  },
+  "__v": 0
+}]
